@@ -1,0 +1,76 @@
+.add-edit-blog h1 {
+  color: #6a1039;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.add-edit-blog .back-button {
+  color: #6a1039;
+  border-color: #6a1039;
+}
+
+.add-edit-blog .back-button:hover {
+  background-color: #6a1039;
+  color: white;
+}
+
+/* Quill editor styles */
+.add-edit-blog .ql-editor {
+  min-height: 300px;
+  font-size: 16px;
+}
+
+.add-edit-blog .ql-toolbar {
+  background-color: #f8f9fa;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.add-edit-blog .ql-container {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Image upload section */
+.image-upload-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: #f8f9fa;
+  border: 1px dashed #dee2e6;
+  border-radius: 4px;
+  color: #6c757d;
+}
+
+.preview-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Submit button */
+.add-edit-blog button[type="submit"] {
+  background-color: #6a1039;
+  border-color: #6a1039;
+}
+
+.add-edit-blog button[type="submit"]:hover:not(:disabled) {
+  background-color: #8c1a4c;
+  border-color: #8c1a4c;
+}

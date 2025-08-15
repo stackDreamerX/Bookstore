@@ -1,0 +1,30 @@
+.order-card {
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px 20px 0 20px;
+  background: var(--white);
+  box-shadow: 0 0 4px 0 var(--shadow);
+  position: relative; /* Để footer có thể tràn ra ngoài */
+}
+
+.order-footer {
+  margin-top: 20px;
+  background-color: var(--green100);
+  padding: 20px;
+  border-radius: 0 0 10px 10px; /* Loại bỏ border-radius để tràn ra ngoài */
+  position: relative;
+  margin-left: -20px; /* Lùi sang trái một chút để tạo hiệu ứng tràn */
+  margin-right: -20px; /* Lùi sang phải một chút để tạo hiệu ứng tràn */
+  z-index: 1; /* Đảm bảo footer nằm trên các phần tử khác nếu có */
+}
+
+.order-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--brown100);
+}

@@ -1,0 +1,4 @@
+# .gitignore
+.env
+# dependencies
+/node_modules

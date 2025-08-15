@@ -1,0 +1,87 @@
+.blog-page-admin {
+  padding-bottom: 50px;
+}
+
+.admin-title {
+  color: #6a1039;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.blog-thumbnail {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.active {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.inactive {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 160px;
+}
+
+.action-buttons button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.action-buttons button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Custom pagination styles */
+.pagination .page-item.active .page-link {
+  background-color: #6a1039;
+  border-color: #6a1039;
+}
+
+.pagination .page-link {
+  color: #6a1039;
+}
+
+.pagination .page-link:hover {
+  color: #fff;
+  background-color: #6a1039;
+  border-color: #6a1039;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .action-buttons button {
+    width: 28px;
+    height: 28px;
+  }
+}

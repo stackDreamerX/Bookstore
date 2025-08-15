@@ -1,0 +1,90 @@
+.container-bg {
+  background-color: var(--grey9);
+}
+
+.user-info__container {
+  margin: 20px 0 50px;
+}
+
+/* ===============================top========================== */
+.section-item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--brown100);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.user-top__avatar {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.btn__upload {
+  width: 120px;
+  height: 40px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+/* =============================bot======================= */
+label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.user-info__bot {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: top;
+  gap: 30px;
+}
+
+.order-detail-history {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 0px var(--shadow);
+  padding: 20px;
+}
+
+.total-cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--green100);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.cost {
+  display: flex;
+  flex-direction: column;
+}
+
+.total-bill {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--brown100);
+}
+
+.info-delivery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: var(--brown100);
+}
+
+.info-customer p,
+.info-journey p {
+  margin-bottom: 10px;
+}

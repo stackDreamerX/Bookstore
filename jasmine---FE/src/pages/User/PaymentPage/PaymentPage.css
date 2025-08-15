@@ -1,0 +1,180 @@
+.container-xl {
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container-xl-pay {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.PaymentInfor {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.pThongtin {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+/* Payment Method Selection */
+.payment-method-selection {
+    margin: 15px 0;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+.payment-method-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.payment-method-option:hover {
+    background-color: #f8f9fa;
+}
+
+.payment-method-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment-method-option label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* ZaloPay specific styles */
+.payment-method-option[for="zalopay"] {
+    border-color: #0068ff;
+}
+
+.payment-method-option[for="zalopay"]:hover {
+    background-color: #f0f7ff;
+}
+
+.VnpayHolder {
+    padding: 15px 0;
+}
+
+.VnpayTitle, .CodTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2a52be;
+}
+
+.VnpayDescription, .CodDescription {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.CodHolder {
+    padding: 15px 0;
+}
+
+.CodInfo {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.CodInfo p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+select.BankCode,
+select.Language {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+select.BankCode:focus,
+select.Language:focus {
+    border-color: #2a52be;
+    outline: none;
+}
+
+.Button-area-pay {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.button1,
+.button2 {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.customBtn2 {
+    background-color: #2a52be !important;
+    color: white !important;
+}
+
+.final-order {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.footerAreaPayment {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+}
+
+.tamtinh,
+.tamtinhVanChuyen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tamtinh2,
+.tamtinhVanChuyen2 {
+    font-weight: 600;
+}
+
+.tamtinhVanChuyen2 {
+    color: #e94560;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .container-xl-pay {
+        flex-direction: column;
+    }
+
+    .footerAreaPayment {
+        padding: 10px;
+    }
+}

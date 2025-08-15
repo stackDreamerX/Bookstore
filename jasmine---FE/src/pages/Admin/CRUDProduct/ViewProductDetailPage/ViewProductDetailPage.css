@@ -1,0 +1,92 @@
+.view-product-detail-title {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--brown100);
+  margin: 30px 0 30px;
+  font-weight: 700;
+}
+
+.view__product-info {
+  margin-bottom: 30px;
+}
+
+.product__price,
+.product__category {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--brown100);
+  align-items: center;
+}
+
+.product__name {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--brown100);
+}
+
+.description {
+  color: var(--green100);
+  background-color: var(--brown100);
+  padding: 8px;
+  border-radius: 15px 15px 0 0;
+  width: 10rem;
+  text-align: center;
+}
+
+.product-description {
+  padding: 15px;
+}
+
+/* Khung bên phải */
+.info__right {
+  flex: 2; /* Chiếm 2 phần tổng không gian */
+  display: flex;
+  flex-direction: column; /* Sắp xếp các hàng dọc */
+  justify-content: space-between;
+  gap: 20px; /* Khoảng cách giữa các hàng */
+}
+
+/* Hàng thông tin (đảm bảo label và nội dung thẳng hàng) */
+.product__info {
+  height: 36rem;
+  display: grid;
+  grid-template-columns: 150px 1fr; /* Cột 1: label, Cột 2: nội dung */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  column-gap: 100px; /* Khoảng cách giữa label và nội dung */
+  row-gap: 20px;
+}
+
+.size {
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa các kích thước */
+  align-items: center; /* Căn giữa kích thước */
+}
+
+/* Label căn trái */
+.product__info label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Nội dung */
+.product__info div {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--brown100);
+}
+
+/* Tên sản phẩm */
+.product__name {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--brown100);
+  margin-bottom: 20px;
+}
+
+.btn__update {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 30px;
+}

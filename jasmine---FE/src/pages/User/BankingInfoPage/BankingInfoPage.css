@@ -1,0 +1,46 @@
+.title-row {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.back-icon {
+  color: var(--brown100);
+}
+
+.back-icon:hover {
+  color: var(--brown50);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.container-banking {
+  margin: 20px 0 50px;
+}
+
+.banking-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.item-banking {
+  width: 35rem;
+  height: auto;
+  box-shadow: 0 0 4px 0 var(--shadow);
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.img-banking {
+  width: 26rem;
+  height: 26rem;
+  flex-shrink: 0;
+}

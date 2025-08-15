@@ -1,0 +1,140 @@
+.AddNewsTitle {
+    color: #3A060E;
+    text-align: center;
+
+    /* Font_Header */
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.flex-content {
+    display: flex;
+}
+
+.firstClass-AddNews {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.firstClass1 {
+    margin-left: 50px;
+}
+
+.firstClass2 {
+    margin-left: 700px;
+}
+
+.contentP {
+    color: #3A060E;
+    text-align: center;
+
+    /* Font_text_Bold */
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 150px;
+}
+
+.left-area {
+    margin-top: 20px;
+}
+
+.left-area-1 {
+    margin-left: 50px;
+}
+
+.left-area-2 {
+    width: 110px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.left-area-3 {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.input-1 {
+    width: 753px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+    border: none;
+    box-shadow: 0px 0px 4px 0px var(--dropshadow, rgba(32, 60, 22, 0.25));
+}
+
+.input-2 {
+    width: 753px;
+    border: none;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 4px 0px var(--dropshadow, rgba(32, 60, 22, 0.25));
+}
+
+.news__image {
+    width: 36rem;
+    height: 40rem;
+    box-shadow: 0 0 4px 0 var(--shadow);
+    border-radius: 15px;
+    background: var(--grey9);
+    cursor: pointer;
+    background-color: #FFF;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.icon__add-image-news {
+
+    position: relative;
+    left: 16rem;
+    bottom: 22rem;
+    width: 40px;
+    margin-left: 20px;
+}
+
+.Button-area-addNews {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.Exit-AddNews {
+    margin-left: 48px;
+}
+
+.news__image {
+    width: 36rem;
+    height: 40rem;
+    box-shadow: 0 0 4px 0 var(--shadow);
+    border-radius: 15px;
+    background: var(--grey9);
+    cursor: pointer;
+  }
+.CustomBtn-Exit {
+    display: flex;
+    width: 147px;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #3A060E;
+    color: #B1E321;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    /* 175% */
+}

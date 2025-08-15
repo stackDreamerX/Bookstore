@@ -1,0 +1,345 @@
+.update-contact-container {
+    padding: 30px 0;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.update-contact {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.update-contact__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 20px 0 40px;
+    text-align: center;
+    color: var(--brown100);
+    border-bottom: 2px solid var(--brown100);
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.update-contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.update-contact__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Layout hai cột */
+.contact-form-row {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.contact-form-column {
+    flex: 1;
+}
+
+/* Cột bên trái - Form nhập */
+.contact-field-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact-label {
+    color: rgba(58, 6, 14, 0.85);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Chỉnh sửa độ rộng các ô input */
+.full-width-input {
+    width: 100% !important;
+}
+
+.full-width-input input {
+    width: 100% !important;
+}
+
+/* Ghi đè style cụ thể cho các input */
+.contact-form-column input[type="text"],
+.contact-form-column input[type="email"],
+.contact-form-column input[type="password"],
+.contact-form-column input[type="number"],
+.contact-form-column input[type="tel"] {
+    width: 100% !important;
+    border-radius: 10px !important;
+    height: 45px !important;
+}
+
+/* Cột bên phải - Logo */
+.logo-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.logo-container {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-title {
+    color: rgba(58, 6, 14, 0.85);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact__image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px 0px rgba(32, 60, 22, 0.15);
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.contact__image-container:hover {
+    border-color: var(--brown100);
+    cursor: pointer;
+}
+
+.contact__image-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(58, 6, 14, 0.5);
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contact__image-placeholder svg {
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+
+.contact__image-placeholder p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.contact__image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.icon__update-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index: 5;
+}
+
+.icon__update-image:hover {
+    transform: scale(1.1);
+    background: white;
+}
+
+.contact-action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.update-button {
+    background-color: var(--brown100) !important;
+    color: white !important;
+    min-width: 150px;
+    transition: all 0.3s ease;
+}
+
+.update-button:hover {
+    background-color: var(--brown100) !important;
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.cancel-button {
+    background-color: #6c757d !important;
+    color: white !important;
+    min-width: 150px;
+    transition: all 0.3s ease;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268 !important;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact-form-row {
+        flex-direction: column;
+    }
+
+    .logo-column {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .update-contact__title {
+        font-size: 2rem;
+    }
+
+    .contact-action-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .update-button, .cancel-button {
+        width: 100%;
+    }
+}
+
+.info__top-contact {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+/* =========================left===================== */
+/* .info__left {
+      display: flex;
+    } */
+
+.contact__image-container {
+    position: relative;
+    width: 38rem;
+    height: 42rem;
+    border: 1px dashed var(--grey9);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--grey9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px 0px var(--dropshadow, rgba(32, 60, 22, 0.25));
+    margin-left: 20px;
+}
+
+.contact__image-placeholder {
+    font-size: 1.4rem;
+    color: var(--brown100);
+    text-align: center;
+}
+
+.contact__image-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact__image {
+    width: 36rem;
+    height: 40rem;
+    box-shadow: 0 0 4px 0 var(--shadow);
+    border-radius: 15px;
+    background: var(--grey9);
+    cursor: pointer;
+}
+
+.icon__update-image {
+    position: absolute;
+    /* Đặt absolute để định vị trong container */
+    top: 10px;
+    /* Khoảng cách từ trên */
+    right: 10px;
+    /* Khoảng cách từ phải */
+    cursor: pointer;
+}
+
+/* =========================right===================== */
+.info__right-contact {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 4px 0 var(--shadow);
+    border-radius: 15px;
+    background: var(--grey9);
+    padding: 30px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.contact-field {
+    color: rgba(58, 6, 14, 0.75);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+
+
+
+/* ======================btn========================= */
+.btn-submit {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 0 30px 20px;
+    gap: 20px;
+}
+.contactHolder-field{
+    display: flex;
+}
+.input-holder-contact{
+
+margin-right: 50px;
+margin-top: 10px;
+}
+.area1{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.area2{
+    margin-top: 60px;
+    margin-left: 5px;
+}
+.info__left-contact{
+    margin-left: 50px;
+}
+

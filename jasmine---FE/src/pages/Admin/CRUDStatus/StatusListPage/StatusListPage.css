@@ -1,0 +1,389 @@
+/* Main container styling */
+.status-page-container {
+  padding: 20px 0;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.container-xl {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.status-list__info {
+  display: flex;
+  gap: 20px;
+}
+
+.side-menu__discount {
+  flex: 0 0 220px;
+}
+
+.status-list__content {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+}
+
+/* Header action styling */
+.status-list__action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.status-list__title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.btn__action {
+  display: flex;
+  gap: 10px;
+}
+
+/* Button styling */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.btn svg {
+  font-size: 0.9em;
+}
+
+.btn-add {
+  background-color: #4285f4;
+  color: white;
+}
+
+.btn-add:hover {
+  background-color: #2b7de9;
+}
+
+.btn-delete {
+  background-color: #f5f5f5;
+  color: #f44336;
+}
+
+.btn-delete:hover {
+  background-color: #fce8e8;
+}
+
+.btn-add-small {
+  background-color: #4285f4;
+  color: white;
+  padding: 8px 14px;
+  font-size: 0.9em;
+}
+
+.btn-add-small:hover {
+  background-color: #2b7de9;
+}
+
+/* Status summary styling */
+.status-summary {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.summary-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  flex: 1;
+  min-width: 200px;
+}
+
+.summary-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.summary-icon.status {
+  background-color: #4285f4;
+}
+
+.summary-info h3 {
+  font-size: 1.8rem;
+  margin: 0 0 5px 0;
+  color: #2c3e50;
+}
+
+.summary-info p {
+  margin: 0;
+  color: #7f8c8d;
+}
+
+/* Table styling improvements */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.promo-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+  background-color: #fff;
+}
+
+.promo-table th,
+.promo-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.promo-table th {
+  background-color: #f7f7f7;
+  font-weight: 600;
+  color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Define specific column widths */
+.promo-table th:nth-child(1),
+.promo-table td:nth-child(1) {
+  width: 40px;
+  text-align: center;
+}
+
+.promo-table th:nth-child(2),
+.promo-table td:nth-child(2) {
+  width: 50px;
+  text-align: center;
+}
+
+.promo-table th:nth-child(3),
+.promo-table td:nth-child(3) {
+  width: 160px;
+}
+
+.promo-table th:nth-child(4),
+.promo-table td:nth-child(4) {
+  width: 180px;
+}
+
+.promo-table th:nth-child(5),
+.promo-table td:nth-child(5) {
+  width: auto;
+}
+
+.promo-table th:nth-child(6),
+.promo-table td:nth-child(6) {
+  width: 80px;
+  text-align: center;
+}
+
+.promo-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Add highlight style for selected rows */
+.promo-table tr.highlight {
+  background-color: #e7f1ff;
+}
+
+/* Status code styling */
+.status-code-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-code {
+  display: inline-block;
+  font-family: monospace;
+  background-color: #f0f0f0;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.status-icon {
+  font-size: 1.1em;
+}
+
+.status-icon.completed {
+  color: #0c9d58;
+}
+
+.status-icon.cancelled {
+  color: #f44336;
+}
+
+.status-icon.in-progress {
+  color: #ff9800;
+}
+
+.status-description {
+  color: #666;
+  font-size: 0.95em;
+  max-width: 300px;
+}
+
+/* Action buttons */
+.actions-column {
+  white-space: nowrap;
+  text-align: center;
+}
+
+.action-btn {
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 8px;
+  margin: 0;
+  border-radius: 4px;
+  transition: all 0.2s;
+  font-size: 1.1em;
+}
+
+.delete-btn:hover {
+  background-color: #ffebee;
+  color: #f44336;
+  transform: scale(1.1);
+}
+
+/* Empty state styling */
+.empty-table {
+  text-align: center;
+  padding: 40px 20px !important;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  color: #7f8c8d;
+}
+
+.empty-state svg {
+  color: #bdc3c7;
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+/* Loading style */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  color: #7f8c8d;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-left-color: #4285f4;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mobile notice */
+.mobile-notice {
+  display: none;
+  background-color: #fff8e1;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  color: #ff9800;
+  font-size: 0.9rem;
+}
+
+.mobile-notice p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-notice p::before {
+  content: "↔️";
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .status-list__info {
+    flex-direction: column;
+  }
+
+  .side-menu__discount {
+    flex: 0 0 auto;
+  }
+
+  .summary-card {
+    min-width: 160px;
+  }
+
+  .mobile-notice {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .status-list__action {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .status-list__title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .btn__action {
+    justify-content: center;
+  }
+}

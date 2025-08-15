@@ -1,0 +1,27 @@
+.btn__form {
+  width: var(--search-box-width);
+  height: var(--search-box-height);
+  background-color: var(--green100);
+  color: var(--brown100);
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: 0.25s;
+  margin-top: 5px;
+}
+
+.btn__form:hover {
+  background-color: #3a060e; /* Màu nền khi hover */
+  color: #b1e321;
+}
+
+.btn__form.disabled {
+  background-color: var(--grey); /* Màu nền khi disabled */
+  color: var(--brown30); /* Màu chữ khi disabled */
+  cursor: not-allowed; /* Không cho nhấn */
+  opacity: 0.7;
+}

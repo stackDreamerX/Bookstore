@@ -1,0 +1,30 @@
+.AddBtn {
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.AddBtn:hover {
+    background-color: #f5f5f5;
+}
+
+.AddBtnHolder {
+    min-width: 180px;
+}
+
+.add-btn-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-btn-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}

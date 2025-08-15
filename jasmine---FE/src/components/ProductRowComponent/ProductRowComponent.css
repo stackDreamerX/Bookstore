@@ -1,0 +1,49 @@
+.product-row {
+  display: grid;
+  grid-template-columns: 100px 3fr 2fr 1fr 2fr;
+  /* grid-template-columns: repeat(5, 1fr); Cột cố định cho ảnh và các cột còn lại sẽ dãn đều */
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px;
+  margin: 10px 0;
+  /* border: 1px solid #ddd; Thêm đường viền mờ để tạo sự phân cách */
+  border-radius: 10px;
+  background-color: var(--white);
+  box-shadow: 0 0 4px 0 var(--shadow);
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  justify-self: center;
+}
+
+.product-name,
+.product-total {
+  font-weight: 600;
+  text-transform: capitalize; /* Làm cho tên sản phẩm đẹp hơn, mỗi chữ cái đầu viết hoa */
+}
+
+.product-price,
+.product-quantity,
+.product-total,
+.product-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: var(--brown100);
+  height: 100%;
+}
+
+/* Hover effect cho dòng sản phẩm */
+.product-row:hover {
+  background-color: var(--grey9); /* Màu nền nhạt khi hover */
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

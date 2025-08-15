@@ -1,0 +1,32 @@
+/* Styling for order codes in reports */
+.order-code {
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--brown100);
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+/* Ensure order codes are displayed in "ORD-XXXX" format */
+.order-code::before {
+  content: "ORD-";
+}
+
+/* When the order code already has the ORD- prefix, hide the ::before content */
+td[data-has-prefix="true"].order-code::before {
+  content: none;
+}
+
+/* Ensure only 4 digits are displayed after prefix */
+.order-code {
+  max-width: 8ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Additional styling for report tables */
+.report-table td.order-code {
+  text-align: center;
+  font-size: 1.4rem;
+}

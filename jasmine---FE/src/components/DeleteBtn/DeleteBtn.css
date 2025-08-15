@@ -1,0 +1,11 @@
+.deleteBtn {
+  width: 19px;
+  height: 24px;
+  flex-shrink: 0;
+  fill: var(--Color1, #3a060e);
+  border: none;
+}
+
+.deleteBtn:hover {
+  color: red;
+}

@@ -1,0 +1,20 @@
+.btn__component {
+  display: flex;
+  width: var(--button-width);
+  height: var(--button-height);
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: var(--amber);
+  color: var(--brown100);
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition-duration: 0.25s;
+}
+
+.btn__component:hover {
+  background-color: var(--burgundy);
+  color: var(--cream-light);
+}

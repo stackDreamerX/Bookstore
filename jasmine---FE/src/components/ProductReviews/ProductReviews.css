@@ -1,0 +1,66 @@
+.product-reviews-container {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #e9ecef;
+}
+
+.reviews-section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.reviews-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #4a90e2;
+}
+
+.reviews-loading,
+.reviews-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.reviews-loading i,
+.reviews-error i {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.reviews-loading i {
+  color: #6c757d;
+}
+
+.reviews-error i {
+  color: #dc3545;
+}
+
+.reviews-loading p,
+.reviews-error p {
+  color: #495057;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .product-reviews-container {
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+
+  .reviews-section-title {
+    font-size: 20px;
+  }
+}

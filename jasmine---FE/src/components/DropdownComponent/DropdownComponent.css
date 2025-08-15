@@ -1,0 +1,56 @@
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.btn__dropdown {
+  display: flex;
+  width: 22rem;
+  height: 6rem;
+  padding: 16px 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: var(--white, #fff);
+  box-shadow: 0px 0px 4px 0px var(--shadow, rgba(32, 60, 22, 0.25));
+  border: none;
+  color: var(--brown100);
+  font-size: 1.6rem;
+}
+
+.content__dropdown {
+  flex: 1;
+  text-align: left;
+  color: var(--brown100);
+}
+
+.icon__dropdown {
+  transition: transform 0.3s ease;
+}
+
+.icon__dropdown.rotate {
+  transform: rotate(180deg); /* Xoay icon khi mở dropdown */
+}
+
+.dropdown-menu {
+  position: absolute; /* Để menu dropdown nằm trên các phần tử khác */
+  top: 100%; /* Đặt menu ngay dưới nút */
+  left: 0; /* Căn trái */
+  background-color: white; /* Màu nền cho menu */
+  border: 1px solid #ccc; /* Đường viền */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Đổ bóng */
+  z-index: 1000; /* Đảm bảo menu nằm trên các phần tử khác */
+  width: 100%; /* Chiều rộng menu */
+  max-height: 200px; /* Giới hạn chiều cao */
+  overflow-y: auto; /* Thêm thanh cuộn nếu cần */
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}

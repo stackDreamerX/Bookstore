@@ -1,0 +1,96 @@
+.container-enter-otp {
+  background-color: var(--white);
+}
+
+.enter-otp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+/* -----------------------enter-otp left------------------------ */
+.enter-otp-container__img {
+  height: 36rem;
+  width: 45rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+.enter-otp__img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  transform: scale(2);
+}
+
+.enter-otp__logo {
+  position: absolute;
+  height: 90px;
+  width: auto;
+  top: 10px;
+  left: center;
+}
+
+/* -----------------------enter-otp right------------------------ */
+
+.enter-otp__left {
+  width: auto;
+  height: 36rem;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px 0px var(--grey5);
+  background-color: var(--grey5);
+}
+
+.enter-otp__title {
+  margin-bottom: 60px;
+  text-align: center;
+  color: var(--brown100);
+  font-weight: 700;
+  font-size: var(--font-size-title);
+}
+
+.enter-otp__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.enter-otp__extend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--brown100);
+  margin-bottom: 10px;
+}
+
+.enter-otp b {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.forgot__password {
+  text-align: right;
+  font-size: 1.4rem;
+  color: var(--brown100);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 8px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.otp__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}

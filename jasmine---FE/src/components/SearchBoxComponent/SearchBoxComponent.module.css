@@ -1,0 +1,36 @@
+.search__component {
+  width: var(--search-box-width);
+  height: 4.4rem;
+  border-radius: 50px;
+  background: #d9d9d900;
+  border: none;
+  font-size: 1.6rem;
+  text-align: left;
+  padding: 0 25px;
+  outline: none;
+  color: var(--brown100);
+  /* box-shadow: 0 0 0 2px var(--green30); */
+  box-shadow: 0 0 4px var(--green50), 0 0 15px var(--green30);
+  margin-right: 10px;
+}
+
+.search__component::placeholder {
+  color: var(--brown30);
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.search__component::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--brown100)"><path d="M18.3 5.71a1 1 0 0 0-1.42 0L12 10.59 7.12 5.71a1 1 0 0 0-1.42 1.42L10.59 12l-4.89 4.88a1 1 0 0 0 1.42 1.42L12 13.41l4.88 4.89a1 1 0 0 0 1.42-1.42L13.41 12l4.89-4.88a1 1 0 0 0 0-1.41z"/></svg>')
+    no-repeat center;
+}
+.search__wrapper{
+  display: flex;
+}
+.search__button{
+  margin-left: 20px;
+  padding: none;
+}

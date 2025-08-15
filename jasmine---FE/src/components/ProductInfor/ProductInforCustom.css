@@ -1,0 +1,63 @@
+.producInfor {
+  display: flex;
+  width: auto;
+  flex-shrink: 0;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.imagePro1 {
+  width: 89.153px;
+  height: 65.676px;
+  flex-shrink: 0;
+  border: 15px;
+}
+.infor1 {
+  margin-left: 23px;
+}
+.Image1 {
+  margin-left: 20px;
+}
+
+.ProName1 {
+  width: 200px;
+  color: #3a060e;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ProSize1 {
+  color: #3a060e;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.soluongMua {
+  margin-left: 20px;
+}
+.sotienMua {
+  margin-left: 23px;
+}
+.p1 {
+  color: var(--Color1, #3a060e);
+
+  /* Font_Text */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.p2 {
+  color: #3a060e;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

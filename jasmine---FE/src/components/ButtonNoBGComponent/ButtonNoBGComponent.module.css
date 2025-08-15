@@ -1,0 +1,30 @@
+.btn__noBG__component {
+  display: flex;
+  width: var(--button-width);
+  height: var(--button-height);
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  color: var(--burgundy);
+  border: none;
+  background: transparent;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition-duration: 0.25s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn__noBG__component:hover {
+  color: var(--amber);
+  /* font-size: 1.8rem; */
+  opacity: 0.9;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.active {
+  color: var(--amber);
+  /* font-size: 1.8rem; */
+  transition: 0.25s;
+  transform: scale(1.2);
+}

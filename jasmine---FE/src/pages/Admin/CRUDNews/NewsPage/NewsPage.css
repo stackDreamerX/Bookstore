@@ -1,0 +1,33 @@
+.TinTuc{
+    margin-top: 50px;
+}
+.h1{
+    color: #3A060E;
+text-align: center;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: 28px; /* 77.778% */
+}
+
+.CustomDropDown{
+    margin-left: -80px;
+    box-shadow: none;
+    margin-top: -50px;
+}
+.BtnAdd-div{
+    margin-left: 30px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 cột */
+    gap: 20px; /* Khoảng cách giữa các CardNews */
+    margin-top: 50px;
+  }
+  
+  .news-grid-item {
+    width: 100%;
+  }
+  

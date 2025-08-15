@@ -1,0 +1,94 @@
+.card-blog {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  background-color: white;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-blog:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-blog-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-blog:hover .card-blog-image img {
+  transform: scale(1.05);
+}
+
+.card-blog-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-blog-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6a1039;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-blog-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #777;
+}
+
+.card-blog-author, .card-blog-date, .card-blog-views {
+  display: flex;
+  align-items: center;
+}
+
+.card-blog-author svg, .card-blog-date svg, .card-blog-views svg {
+  margin-right: 5px;
+}
+
+.card-blog-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.card-blog-button {
+  background-color: #6a1039;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  margin-top: auto;
+}
+
+.card-blog-button:hover {
+  background-color: #8c1a4c;
+}

@@ -1,0 +1,406 @@
+/* Modern User List Page Styling */
+
+:root {
+  --primary-color: #63462d;
+  --secondary-color: #92705f;
+  --accent-color: #f8ede3;
+  --light-color: #ffffff;
+  --border-radius: 12px;
+  --shadow: rgba(0, 0, 0, 0.05);
+  --hover-color: #e9d5c4;
+  --transition: all 0.3s ease;
+}
+
+/* Main Layout */
+.user-list__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 16px 0 24px 0;
+}
+
+/* Admin Header */
+.admin-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.user-list__title {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.tag-admin {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--accent-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--shadow);
+  padding: 12px 20px;
+  transition: var(--transition);
+}
+
+.tag-admin:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px var(--shadow);
+}
+
+.admin-avatar {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--light-color);
+}
+
+.name-role {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.role {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  background-color: var(--light-color);
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+/* Side Menu */
+.side-menu__user {
+  min-width: 240px;
+  height: auto;
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--shadow);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+/* Main Content Area */
+.user-list__content {
+  width: 100%;
+  height: auto;
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--shadow);
+  padding: 24px;
+}
+
+/* Action Buttons */
+.btn__action {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.btn__action button {
+  transition: var(--transition);
+}
+
+.btn__action button:hover {
+  transform: translateY(-2px);
+}
+
+/* Table Styling */
+.table-container {
+  width: 100%;
+  max-height: 500px;
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: var(--light-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px var(--shadow);
+  padding: 16px;
+  margin-top: 16px;
+}
+
+/* Reset table styles */
+.promo-table {
+  width: 100%;
+  min-width: 1200px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+/* Set specific widths for each column to prevent overlap */
+.promo-table th:nth-child(1),
+.promo-table td:nth-child(1) {
+  width: 50px;
+}
+
+.promo-table th:nth-child(2),
+.promo-table td:nth-child(2) {
+  width: 60px;
+}
+
+.promo-table th:nth-child(3),
+.promo-table td:nth-child(3),
+.promo-table th:nth-child(4),
+.promo-table td:nth-child(4) {
+  width: 100px;
+}
+
+.promo-table th:nth-child(5),
+.promo-table td:nth-child(5),
+.promo-table th:nth-child(6),
+.promo-table td:nth-child(6) {
+  width: 120px;
+}
+
+.promo-table th:nth-child(7),
+.promo-table td:nth-child(7) {
+  width: 130px;
+}
+
+.promo-table th:nth-child(8),
+.promo-table td:nth-child(8) {
+  width: 100px;
+}
+
+/* Date columns with proper widths */
+.promo-table th:nth-child(9),
+.promo-table td:nth-child(9),
+.promo-table th:nth-child(10),
+.promo-table td:nth-child(10) {
+  width: 160px;
+}
+
+/* Add spacing between date columns */
+.promo-table th:nth-child(9),
+.promo-table td:nth-child(9) {
+  border-right: 15px solid transparent;
+}
+
+.promo-table th:nth-child(10),
+.promo-table td:nth-child(10) {
+  border-left: none !important;
+}
+
+/* Standard cell styling */
+.promo-table th,
+.promo-table td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Checkbox styling */
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Highlight selected rows */
+.promo-table tbody tr.highlight {
+  background-color: var(--hover-color);
+  border-left: 3px solid var(--primary-color);
+}
+
+/* Scrollbar Styling */
+.table-container::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .user-list__info {
+    flex-direction: column;
+  }
+
+  .side-menu__user {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Animation for new data */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.promo-table tbody tr {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Mobile notice for horizontal scroll instruction */
+.mobile-notice {
+  display: none; /* Hidden by default on large screens */
+  padding: 12px;
+  background-color: #f8f9fa;
+  text-align: center;
+  font-size: 1rem;
+  color: #7f8c8d;
+  border-bottom: 1px solid #eee;
+}
+
+/* Show mobile notice on smaller screens */
+@media (max-width: 1200px) {
+  .mobile-notice {
+    display: block; /* Show on smaller screens */
+  }
+}
+
+/* Date column specific styling */
+.date-column {
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+  text-align: center;
+  background-color: rgba(248, 237, 227, 0.3);
+  border-radius: 4px;
+  letter-spacing: -0.3px;
+  padding: 6px 8px;
+  font-weight: 500;
+}
+
+/* Date headers styling */
+.date-header {
+  background-color: rgba(248, 237, 227, 0.8) !important;
+}
+
+.updated-header {
+  background-color: rgba(248, 237, 227, 1) !important;
+  border-left: 3px solid var(--secondary-color) !important;
+}
+
+/* Make sure columns don't collapse */
+.promo-table {
+  table-layout: fixed;
+}
+
+/* Increase space between date columns by making them narrower */
+.promo-table th:nth-child(9),
+.promo-table td:nth-child(9) {
+  width: 170px;
+  max-width: 170px;
+}
+
+.promo-table th:nth-child(10),
+.promo-table td:nth-child(10) {
+  width: 170px;
+  max-width: 170px;
+}
+
+/* Add spacing between them */
+.table-scroll-container table {
+  border-spacing: 0 0;
+  border-collapse: separate;
+}
+
+/* Style the date columns differently */
+.date-column {
+  display: inline-block;
+  width: auto;
+  min-width: 130px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Table scroll container for horizontal scrolling */
+.table-scroll-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Table header styling */
+.promo-table th {
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* First and last table header corners rounded */
+.promo-table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.promo-table th:last-child {
+  border-top-right-radius: 8px;
+}
+
+/* Row styling */
+.promo-table tbody tr {
+  transition: var(--transition);
+}
+
+.promo-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.promo-table tbody tr:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-1px);
+}
+
+/* Proper font sizing */
+.promo-table th,
+.promo-table td {
+  font-size: 1.4rem;
+}
+
+/* Date column specific styling */
+.date-column {
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+  text-align: center;
+  background-color: rgba(248, 237, 227, 0.3);
+  border-radius: 4px;
+  letter-spacing: -0.3px;
+  padding: 6px 8px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Date column cell styling */
+.date-column-cell {
+  padding: 8px 10px !important;
+}
+
+.updated-column-cell {
+  background-color: rgba(255, 245, 235, 0.4);
+}
+
+.updated-date {
+  background-color: rgba(248, 237, 227, 0.5);
+}

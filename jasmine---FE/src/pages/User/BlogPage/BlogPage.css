@@ -1,0 +1,30 @@
+.blog-page {
+  padding-bottom: 50px;
+}
+
+.blog-page h1 {
+  color: #6a1039;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #6a1039;
+  border-color: #6a1039;
+}
+
+.pagination .page-link {
+  color: #6a1039;
+}
+
+.pagination .page-link:hover {
+  color: #fff;
+  background-color: #6a1039;
+  border-color: #6a1039;
+}

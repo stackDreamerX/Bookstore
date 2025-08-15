@@ -1,0 +1,29 @@
+.cart-item__quantity {
+    display: flex;
+padding: 8px;
+align-items: center;
+gap: 6px;
+border-radius: 50px;
+border: 1px solid var(--Color1, #3A060E);
+width: 100px;
+
+  }
+
+.Minus,
+.Add{
+color: #3A060E;
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+display: flex;
+width: 43px;
+height: 22px;
+padding: 2px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border: none;
+background-color: white;
+}

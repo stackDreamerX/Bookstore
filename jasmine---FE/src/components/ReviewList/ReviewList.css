@@ -1,0 +1,139 @@
+.review-list {
+  margin-top: 30px;
+  border-top: 1px solid #eaeaea;
+  padding-top: 20px;
+}
+
+.review-item {
+  margin-bottom: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.review-item:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.review-user {
+  display: flex;
+  align-items: center;
+}
+
+.review-user i {
+  font-size: 24px;
+  color: #666;
+  margin-right: 10px;
+}
+
+.review-username {
+  font-weight: 600;
+  color: #333;
+}
+
+.review-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.review-date {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.review-content {
+  color: #555;
+  line-height: 1.5;
+}
+
+.review-admin-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+  gap: 10px;
+}
+
+.visibility-toggle,
+.delete-review {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.visibility-toggle i,
+.delete-review i {
+  margin-right: 5px;
+}
+
+.hide-review {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.hide-review:hover {
+  background-color: #f5c6cb;
+}
+
+.show-review {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.show-review:hover {
+  background-color: #c3e6cb;
+}
+
+.delete-review {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-review:hover {
+  background-color: #c82333;
+}
+
+.hidden-review {
+  opacity: 0.6;
+  background-color: #f0f0f0;
+  border-left: 4px solid #dc3545;
+}
+
+.no-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.no-reviews i {
+  font-size: 48px;
+  color: #ccc;
+  margin-bottom: 16px;
+}
+
+.no-reviews p {
+  color: #777;
+  font-size: 16px;
+  max-width: 500px;
+}

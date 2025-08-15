@@ -1,0 +1,109 @@
+.h1 {
+    color: var(--Color1, #3A060E);
+    text-align: center;
+    font-family: Poppins !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 28px;
+    margin: auto;
+}
+
+.productadmin__top {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: linear-gradient(to right, #f8f8f8, #ffffff);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.productadmin__title {
+    color: var(--Color1, #3A060E);
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.container-xl {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.CustomDropDown {
+    margin-left: -50px;
+    box-shadow: none;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.news-grid-item {
+    width: 100%;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.news-grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.PageNumberHolder {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 3rem 0;
+}
+
+.pageNumber {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    color: #333;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pageNumber:hover {
+    background-color: #f8f8f8;
+}
+
+.pageNumber:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(58, 6, 14, 0.2);
+}
+
+.pageNumber[style*="bold"] {
+    background-color: var(--Color1, #3A060E);
+    color: white;
+    border-color: var(--Color1, #3A060E);
+}

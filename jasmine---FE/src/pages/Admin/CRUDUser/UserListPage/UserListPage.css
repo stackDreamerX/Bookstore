@@ -1,0 +1,142 @@
+.user-list__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  gap: 10px;
+  padding: 10px 0 20px 0;
+}
+
+.admin-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tag-admin {
+  width: 24rem;
+  height: 6rem;
+  background-color: var(--grey9);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 0 var(--shadow);
+  padding: 10px;
+}
+
+.admin-avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* ================side menu ======================= */
+.side-menu__user {
+  width: fit-content;
+  height: 52rem;
+  text-align: top;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 0 4px 0 var(--shadow);
+}
+
+h2 {
+  color: var(--brown100);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 160px;
+}
+
+/* ==============user list================ */
+.user-list__content {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 0px var(--shadow);
+  padding: 30px;
+}
+.user-list__action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+}
+
+/* .user-list__title {
+  margin-left: 20px;
+} */
+
+.btn__action {
+  display: flex;
+  justify-content: left !important;
+  align-items: center;
+}
+/* ====================table================= */
+/* Container chứa bảng */
+.table-container {
+  width: 100%; /* Chiều rộng toàn phần */
+  max-height: 400px; /* Giới hạn chiều cao */
+  overflow-x: auto; /* Thanh cuộn ngang */
+  overflow-y: auto; /* Thanh cuộn dọc */
+  background-color: #fff; /* Màu nền */
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 0px var(--shadow);
+  padding: 10px;
+}
+
+/* Bảng */
+.promo-table {
+  width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng container */
+  border-collapse: collapse; /* Bỏ khoảng cách giữa các ô */
+  min-width: 1440px; /* Đảm bảo bảng không bị thu nhỏ quá mức */
+}
+
+.promo-table th,
+.promo-table td {
+  padding: 10px;
+  text-align: center;
+  /* border-bottom: 1px solid #e0e0e0; */
+  font-size: 1.4rem;
+}
+
+/* Column width for date columns */
+.promo-table th:nth-child(9),
+.promo-table td:nth-child(9),
+.promo-table th:nth-child(10),
+.promo-table td:nth-child(10) {
+  min-width: 180px; /* Increased width for date columns */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.promo-table th {
+  font-weight: 600;
+  background-color: #fff;
+  position: sticky; /* Sticky header */
+  top: 0;
+  z-index: 1; /* Header nổi trên nội dung */
+}
+
+.promo-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Màu nền xen kẽ */
+}
+
+.promo-table tbody tr:hover {
+  background-color: #d1e7ff; /* Hiệu ứng hover */
+}
+
+/* Tùy chỉnh thanh cuộn */
+.table-container::-webkit-scrollbar {
+  height: 8px; /* Độ dày của thanh cuộn ngang */
+  width: 8px; /* Độ dày của thanh cuộn dọc */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: #ccc; /* Màu của thanh cuộn */
+  border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+  background: #aaa; /* Màu khi hover */
+}

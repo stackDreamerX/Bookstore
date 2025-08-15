@@ -1,0 +1,38 @@
+.primary {
+    display: flex;
+    background-color: white !important;
+    /* Đảm bảo background là màu trắng */
+    color: #3A060E !important;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+    box-shadow: 0px 2px 4px 0px #203c1640;
+    padding: 0;
+    
+}
+
+.primary:hover{
+    transition: 0.25s;
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.secondary {
+    display: flex;
+    background-color: #3A060E !important;
+    /* Màu nền nâu cho secondary */
+    color: white !important;
+    border-radius: 15px;
+    border: none !important;
+}
+
+.delete-productBtn{
+    border: none;
+    background-color: white;
+}
+.primary:hover{
+    transition: 0.25s;
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+

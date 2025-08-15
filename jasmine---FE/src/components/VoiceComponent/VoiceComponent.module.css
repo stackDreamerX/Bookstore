@@ -1,0 +1,13 @@
+.voiceButton {
+  background-color: transparent;
+  color: var(--brown100);
+  border: none;
+  cursor: pointer;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.voiceButton:hover {
+  color: var(--green100);
+}

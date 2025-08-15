@@ -1,0 +1,108 @@
+.recommendation-container {
+  padding: 10px 0;
+  margin: 10px 0;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.carousel-item {
+  padding: 5px;
+  display: flex !important;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slick-slide {
+  transition: all 0.3s ease;
+}
+
+.slick-slide:hover {
+  transform: translateY(-5px);
+}
+
+.slick-dots {
+  bottom: -25px;
+}
+
+.slick-dots li button:before {
+  color: var(--brown100);
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: var(--brown100);
+}
+
+.no-products {
+  text-align: center;
+  padding: 15px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Make arrows more visible */
+.slick-prev, .slick-next {
+  z-index: 10;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: var(--brown100) !important;
+  border-radius: 50%;
+  opacity: 0.7;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: var(--brown100) !important;
+  opacity: 1;
+}
+
+.slick-prev {
+  left: 5px !important;
+}
+
+.slick-next {
+  right: 5px !important;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: 1;
+}
+
+/* Handle spacing between cards */
+.slick-track {
+  display: flex !important;
+  gap: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Fix slider container */
+.slick-slider {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.slick-list {
+  width: calc(100% - 80px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}

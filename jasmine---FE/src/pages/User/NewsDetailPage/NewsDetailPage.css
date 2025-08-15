@@ -1,0 +1,83 @@
+.news {
+    margin: 50px 0;
+    font-size: 1.6rem;
+    color: var(--brown100);
+  }
+  
+  /* ==========================news title===================== */
+  .news__top {
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .news__title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  /* ===========================news bot============================= */
+  .news__bot {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  .Exit_btn{
+    margin-left: 1100px;
+    margin-bottom: 20px;
+  }
+  
+  /* ===========================news left============================= */
+  .news__image{
+    position: absolute;
+    z-index: 1;
+    width: 35rem;
+    height: 35rem;
+    /* clip-path: inset(20px round 10px); */
+    /* clip-path: inset(round 15px 20px 15px 20px); */
+    border-radius: 15px 20px 15px 20px;
+    margin: 10px 10px 50px 20px;
+    object-fit: cover;
+  }
+  
+  .news__image--border {
+    position: relative;
+    top: 30px;
+    left: 0px;
+    width: 35rem;
+    height: 35rem;
+    background-color: transparent;
+    border: 2px solid var(--green100);
+    border-radius: 20px;
+  }
+   /* .news__left{
+    position: relative;
+    top: 20px;
+    left: 0px;
+    width: 50rem;
+    height: 35rem;
+    background-color: transparent;
+    border: 2px solid var(--green100);
+    border-radius: 20px;
+   } */
+  
+  /* ===========================news right============================= */
+  .news__right {
+    min-width: 60rem;
+    margin: 20px 0 0 50px;
+  }
+
+  
+  .news__paragraph--title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  .news__paragraph--content {
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 1.75;
+    
+  }
+  
